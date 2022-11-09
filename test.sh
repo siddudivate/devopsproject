@@ -1,1 +1,1 @@
-echo "hello mates"
+hello
