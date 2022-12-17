@@ -1,0 +1,11 @@
+#!/bin/bash
+hostname docker-server
+sudo yum install docker -y
+sudo service docker start
+sudo useradd dockeradmin
+sudo passwd 123456
+sudo usermod -aG docker dockeradmin
+sudo yum update -y
+sudo yum install git -y
+#sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+#sudo service sshd reload
