@@ -1,26 +1,44 @@
-<form action="#" method="post">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Login with Social Media or Manually</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+        </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn">
+          <i class="fa fa-google fa-fw"></i> Login with Google+
+        </a>
+      </div>
 
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
 
-  <label for="confirm-password">Confirm Password:</label>
-  <input type="password" id="confirm-password" name="confirm-password" required>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
 
-  <div class="social-media-icons">
-    <label for="facebook"><i class="fab fa-facebook"></i></label>
-    <input type="checkbox" id="facebook" name="facebook" value="Facebook">
+    </div>
+  </form>
+</div>
 
-    <label for="twitter"><i class="fab fa-twitter"></i></label>
-    <input type="checkbox" id="twitter" name="twitter" value="Twitter">
-
-    <label for="instagram"><i class="fab fa-instagram"></i></label>
-    <input type="checkbox" id="instagram" name="instagram" value="Instagram">
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
   </div>
-
-  <button type="submit">Sign up</button>
-</form>
+</div>
